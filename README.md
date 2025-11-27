@@ -1,4 +1,5 @@
-# Android ADB + Scrcpy Toolkit (Windows Only)
+# Android ADB & Scrcpy Toolkit (Windows Only)
+
 
 A clean, offline-ready toolkit for using **ADB** and **scrcpy** on Windows.  
 Everything needed is included **inside this repo** — no external downloads required.
