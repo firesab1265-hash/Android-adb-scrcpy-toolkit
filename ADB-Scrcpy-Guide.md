@@ -8,10 +8,6 @@ https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/download
 
 https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
 
-
-
-Copy code
-
 ---
 
 # 📦 1. What’s Included
@@ -41,8 +37,6 @@ Allows you to:
 
 C:\Android\platform-tools\
 
-yaml
-Copy code
 
 Inside that folder you should see `adb.exe`.
 
@@ -54,9 +48,6 @@ Inside that folder you should see `adb.exe`.
 2. Extract it to:
 
 C:\Android\scrcpy\
-
-yaml
-Copy code
 
 Inside that folder you should see `scrcpy.exe`.
 
@@ -91,15 +82,11 @@ Open Command Prompt and navigate to platform-tools:
 cd C:\Android\platform-tools
 adb devices
 
-lua
-Copy code
 
 Expected output:
 
 XXXXXXXXXXXX device
 
-yaml
-Copy code
 
 If it says `unauthorized`, check your device for a permission popup.
 
@@ -115,14 +102,9 @@ If nothing shows:
 ### ✔ List connected devices
 adb devices
 
-shell
-Copy code
-
 ### ✔ Reboot device
 adb reboot
 
-shell
-Copy code
 
 ### ✔ Open an interactive shell
 adb shell
@@ -132,8 +114,6 @@ Copy code
 Exit with:
 exit
 
-shell
-Copy code
 
 ### ✔ Install an APK
 adb install app.apk
@@ -144,14 +124,10 @@ Copy code
 ### ✔ Push a file to the Downloads folder
 adb push file.txt /sdcard/Download/
 
-shell
-Copy code
 
 ### ✔ Pull a file *from* Downloads
 adb pull /sdcard/Download/log.txt .
 
-yaml
-Copy code
 
 The `.` means "save to the current folder".
 
@@ -163,28 +139,20 @@ The `.` means "save to the current folder".
 cd C:\Android\scrcpy
 scrcpy.exe
 
-nginx
-Copy code
 
 Your device should immediately appear on your screen.
 
 ### Fullscreen mode
 scrcpy.exe -f
 
-shell
-Copy code
 
 ### Turn device screen off while mirroring
 scrcpy.exe --turn-screen-off
 
-shell
-Copy code
 
 ### Improve quality
 scrcpy.exe --bit-rate 16M --max-size 1920
 
-yaml
-Copy code
 
 ---
 
@@ -198,8 +166,6 @@ Copy code
 adb kill-server
 adb start-server
 
-nginx
-Copy code
 
 ### Unauthorized?
 Toggle USB debugging off/on on the device.
@@ -207,9 +173,6 @@ Toggle USB debugging off/on on the device.
 ### Scrcpy closes instantly?
 Run from CMD to see errors:
 scrcpy.exe
-
-yaml
-Copy code
 
 ---
 
@@ -224,6 +187,3 @@ adb pull /sdcard/Download/file .
 scrcpy
 scrcpy -f
 scrcpy --turn-screen-off
-
-yaml
-Copy code
