@@ -1,7 +1,3 @@
-![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)  
-![ADB Included](https://img.shields.io/badge/ADB-Platform--Tools-green)  
-![Scrcpy Included](https://img.shields.io/badge/Scrcpy-v3.1-orange)
-
 # Android ADB + Scrcpy Toolkit
 
 A clean, offline-ready toolkit for using ADB and Scrcpy on Windows.  
