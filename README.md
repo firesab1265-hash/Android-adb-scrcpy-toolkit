@@ -1,107 +1,71 @@
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)
 ![ADB Included](https://img.shields.io/badge/ADB-Platform--Tools-green)
 ![Scrcpy Included](https://img.shields.io/badge/Scrcpy-v3.1-orange)
-# Android ADB + Scrcpy Toolkit (Windows Only)
+Android ADB + Scrcpy Toolkit
 
-A clean, offline-ready toolkit for using **ADB** and **Scrcpy** on Windows.  
-Everything you need is stored **inside this repo** — no external downloads required.
+A clean, offline-ready toolkit for using ADB and Scrcpy on Windows.
+Everything you need is stored inside this repo — no external downloads required.
 
 This toolkit is designed for:
-- Samsung tablets  
-- Pixel tablets  
-- Lenovo tablets  
-- Any Android device with USB debugging enabled  
 
-Perfect for IT helpdesk, wall panels, kiosk devices, development, automation, and general Android management.
+Any Android device with USB debugging enabled
 
----
+Perfect for wall panels, kiosk devices, development, automation, and general Android management.
 
-# 📦 Included Tools (Offline)
+📦 Included Tools (Offline)
 
-All required tools are located in the `/downloads` folder:
+All required tools are located in the /downloads folder:
 
 /downloads/platform-tools-win.zip ← ADB & Fastboot (Windows)
+
 /downloads/scrcpy-win64-v3.1.zip ← Scrcpy (Windows 64-bit)
 
-
-You do **not** need any other downloads.  
+You do not need any other downloads.
 These are the exact files used for all instructions in this toolkit.
 
----
-
-# 📘 Main Guide
+📘 Main Guide
 
 Start here:
 
-👉 **[ADB-Scrcpy-Guide.md](ADB-Scrcpy-Guide.md)**
+👉 ADB-Scrcpy-Guide.md
 
 The guide covers:
 
-- Extracting the offline tools  
-- Enabling Developer Options  
-- Enabling USB debugging  
-- Connecting the device  
-- Running ADB commands  
-- Installing APKs  
-- Pushing/Pulling files safely  
-- Running scrcpy over USB  
-- Basic troubleshooting  
-- A clean ADB + Scrcpy cheat sheet  
+Extracting the offline tools
 
-Everything is written to be beginner-friendly and Windows-only so there's no confusion.
+Enabling Developer Options
 
----
+Enabling USB debugging
 
-# 🗂 Repository Structure
+Connecting the device
 
-Android-adb-scrcpy-toolkit/
-├── ADB-Scrcpy-Guide.md ← Main setup guide
-├── downloads/ ← Offline tools included here
-│ ├── platform-tools-win.zip
-│ └── scrcpy-win64-v3.1.zip
-├── scrcpy/ ← (reserved for advanced scrcpy docs)
-├── tools/ ← (reserved for batch files/scripts)
-└── README.md ← You are here
+Running ADB commands
 
+Installing APKs
 
-This structure keeps everything tidy, expandable, and future-proof.
+Pushing/Pulling files safely
 
----
+Running scrcpy over USB
 
-# 🤖 AI-Powered ADB & Scrcpy Help
+Basic troubleshooting
 
-This toolkit intentionally keeps documentation **lean and essential**.
+A clean ADB + Scrcpy cheat sheet
 
-For anything advanced, you can use **AI to generate commands on the fly**.
+🤖 AI-Powered ADB & Scrcpy Help
 
-## How to use AI with this toolkit:
+This toolkit is intentionally kept simple — just the basics.
 
-1. Download this entire GitHub repository as a ZIP  
-2. Upload it into ChatGPT (or your preferred AI assistant)  
-3. Ask:
+For anything advanced, you can use AI to generate commands on the fly.
 
-Give me the exact ADB command for ______ using this toolkit.
+How to use AI with this toolkit:
 
+Download this entire GitHub repository as a ZIP
 
-### Example prompts:
+Upload it into ChatGPT (or your preferred AI assistant)
 
-Give me ADB commands to remove system apps.
-Give me the command to disable all vibration.
-Give me ADB commands to extract an APK.
-Give me debugging commands for scrcpy freezing.
-Give me ADB commands to list all installed packages.
-Give me ADB commands to read logs or battery stats.
+This makes the toolkit infinite, without storing hundreds of command reference files.
 
+🔥 fireLabs_AI
 
-The AI will automatically:
-- detect that you're on **Windows**
-- use the correct folder structure (`downloads/platform-tools-win/`)
-- generate accurate commands
-- warn you before dangerous operations
-- provide full explanations
-
-This makes the toolkit **infinite**, without storing hundreds of command reference files.
-
----
-
-Made for fast Android setup, scrcpy management, kiosk devices, and streamlined IT work.
+This toolkit is part of fireLabs_AI — a collection of small projects, utilities, and experiments I build as an IT hobby developer using AI-assisted development.
+The tools in this repo are not created by me — they’re publicly available resources that I’ve organized here for easier access and convenience.
