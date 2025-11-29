@@ -1,163 +1,145 @@
-ADB & SCRCPY (Windows Only) — Complete Offline Guide
-
+ADB & SCRCPY (WINDOWS ONLY) — COMPLETE OFFLINE GUIDE
 Clean • Beginner-Friendly • Self-Contained
 
-📦 1. What’s Included
+---------------------------------------------------------------------
 
-This repository contains everything needed to run ADB and Scrcpy on Windows without installing Android Studio or downloading anything externally.
+📦 1. WHAT’S INCLUDED
 
-Included inside downloads:
+This repository contains everything needed to run ADB and Scrcpy on Windows
+without installing Android Studio or downloading anything externally.
 
-platform-tools-win.zip → ADB + Fastboot (Windows)
+Included inside `downloads`:
 
-scrcpy-win64-v3.1.zip → Scrcpy (Windows 64-bit)
+• `platform-tools-win.zip` → ADB + Fastboot (Windows)
+• `scrcpy-win64-v3.1.zip` → Scrcpy (Windows 64-bit)
 
-🛠️ 2. Installation (Windows)
-Step 1 — Extract Platform Tools
+---------------------------------------------------------------------
 
-Open: downloads/platform-tools-win.zip
+🛠️ 2. INSTALLATION (WINDOWS)
 
+STEP 1 — Extract Platform Tools
+Open: `downloads/platform-tools-win.zip`
 Extract to a simple location such as:
 C:\Android\platform-tools\
+Confirm you see: `adb.exe` and `fastboot.exe`
 
-Confirm you see: adb.exe and fastboot.exe
-
-Step 2 — Extract Scrcpy
-
-Open: downloads/scrcpy-win64-v3.1.zip
-
+STEP 2 — Extract Scrcpy
+Open: `downloads/scrcpy-win64-v3.1.zip`
 Extract to:
 C:\Android\scrcpy\
-
-Confirm you see: scrcpy.exe
+Confirm you see: `scrcpy.exe`
 
 Installation is complete.
 
-🔧 3. Prepare Your Android Device
-Enable Developer Options
+---------------------------------------------------------------------
 
+🔧 3. PREPARE YOUR ANDROID DEVICE
+
+Enable Developer Options:
 Settings → About phone/tablet
-
-Tap Build number 7 times
-
+Tap “Build number” seven times
 Enter your PIN
 
-Enable USB Debugging
+Enable USB Debugging:
+Settings → System → Developer options → USB debugging
+Turn it on
 
-Settings → System → Developer options
-
-Enable USB debugging
-
-Connect Your Device
-
-Use a good USB cable and accept the popup:
-
-Allow USB debugging?
-
+Connect Your Device:
+Use a good USB cable and approve the popup:
+“Allow USB debugging?”
 ✔ Always allow from this computer
-
 ✔ OK
 
-🧪 4. Test ADB Connection
+---------------------------------------------------------------------
 
-Run in Command Prompt:
+🧪 4. TEST ADB CONNECTION
 
+Run the following in Command Prompt:
 cd C:\Android\platform-tools
 adb devices
 
-
-Expected output:
-
+Expected result:
 XXXXXXXXXXXX    device
 
-
-If it shows unauthorized:
-
-Check device for a popup
-
-Toggle USB debugging
+If it shows “unauthorized”:
+• Check your device for a popup
+• Toggle USB debugging
 
 If nothing appears:
+• Try a new cable
+• Enable File Transfer (MTP)
+• Restart your device
+• Restart ADB:
+  adb kill-server
+  adb start-server
 
-Try a new cable
+---------------------------------------------------------------------
 
-Enable File Transfer (MTP)
+⚙️ 5. ESSENTIAL ADB COMMANDS
 
-Restart your device
-
-Restart ADB:
-
-adb kill-server
-adb start-server
-
-⚙️ 5. Essential ADB Commands
-
-List devices
+List devices:
 adb devices
 
-Reboot device
+Reboot device:
 adb reboot
 
-Open shell
+Open shell:
 adb shell
-Exit with: exit
+(exit with: exit)
 
-Install APK
+Install APK:
 adb install app.apk
 
-Push file → Downloads
+Push file → Downloads:
 adb push file.txt /sdcard/Download/
 
-Pull file ← Downloads
+Pull file ← Downloads:
 adb pull /sdcard/Download/file.txt .
-(The . means “save to current folder”)
+(The “.” means “save to current folder”.)
 
-📺 6. Scrcpy Basics (USB Mirroring)
+---------------------------------------------------------------------
 
-Run scrcpy
+📺 6. SCRCPY BASICS (USB MIRRORING)
 
+Run scrcpy:
 cd C:\Android\scrcpy
 scrcpy.exe
 
-
-Fullscreen mode
+Fullscreen:
 scrcpy -f
 
-Turn device screen off while mirroring
+Turn device screen off while mirroring:
 scrcpy --turn-screen-off
 
-Improve quality
+Improve quality:
 scrcpy --bit-rate 16M --max-size 1920
 
-Show errors
+Show debug logs (if it closes instantly):
 scrcpy
 
-🚨 7. Troubleshooting
-Device Not Detected
+---------------------------------------------------------------------
 
-Change USB cable
+🚨 7. TROUBLESHOOTING
 
-Restart device
+Device not detected:
+• Change USB cable
+• Restart device
+• Restart ADB:
+  adb kill-server
+  adb start-server
 
-Restart ADB:
+Unauthorized:
+• Toggle USB debugging
+• Reconnect USB
+• Clear authorization and try again
 
-adb kill-server
-adb start-server
+Scrcpy closes instantly:
+• Run “scrcpy” from CMD to view errors
 
-Unauthorized
+---------------------------------------------------------------------
 
-Toggle USB debugging
+🧾 8. QUICK CHEAT SHEET
 
-Reconnect USB
-
-Clear authorization and retry
-
-Scrcpy Closes Instantly
-
-Run scrcpy from CMD to view errors:
-scrcpy
-
-🧾 8. Quick Cheat Sheet
 adb devices
 adb shell
 adb reboot
@@ -168,10 +150,18 @@ scrcpy
 scrcpy -f
 scrcpy --turn-screen-off
 
+---------------------------------------------------------------------
+
 🔥 9. fireLabs_AI
 
-This toolkit is part of fireLabs_AI — a personal collection of tools and experiments I organize as an IT hobby developer using AI-assisted development.
+This toolkit is part of fireLabs_AI — a personal collection of tools and
+experiments I organize as an IT hobby developer using AI-assisted development.
 
-The tools in this repo are not created by me — they are publicly available utilities bundled here for convenience.
+The tools in this repo are not created by me — they are publicly available
+utilities bundled here purely for convenience and ease of use.
 
 More curated tools and experiments will be added as fireLabs_AI grows.
+
+---------------------------------------------------------------------
+
+END OF COMPLETE GUIDE
