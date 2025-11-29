@@ -13,9 +13,10 @@ Included (inside /downloads):
   • scrcpy-win64-v3.1.zip      → Scrcpy (Windows 64-bit)
 
 Direct links:
-  https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-win.zip
+
+SCRCPY: https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-win.zip
   
-  https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
+Toolkit: https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
 ------------------------------
 
 🛠️ 2. INSTALLATION (WINDOWS)
