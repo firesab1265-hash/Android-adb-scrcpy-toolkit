@@ -1,6 +1,7 @@
 #        ADB & SCRCPY (WINDOWS ONLY) — COMPLETE OFFLINE GUIDE        #
 #                Clean • Beginner-Friendly • Self-Contained          #
 
+
 📦 1. WHAT’S INCLUDED
 
 This repository contains everything needed to run ADB and Scrcpy on Windows
@@ -14,6 +15,7 @@ Included (inside /downloads):
 Direct links:
   https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-win.zip
   https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
+
 
 🛠️ 2. INSTALLATION (WINDOWS)
 
@@ -42,6 +44,7 @@ STEP 2 — Extract Scrcpy
 
 Done — installation complete.
 
+
 🔧 3. PREPARE YOUR ANDROID DEVICE
 
 -----------------------------
@@ -67,6 +70,7 @@ Approve the popup:
     ✔ Always allow from this computer
     ✔ OK  
 
+
 🧪 4. TEST ADB CONNECTION
 
 Open Command Prompt and run:
@@ -90,6 +94,7 @@ If nothing shows:
 
         adb kill-server
         adb start-server
+
 
 ⚙️ 5. ESSENTIAL ADB COMMANDS
 
@@ -116,6 +121,7 @@ Pull file ← Downloads:
 
 (The “.” means “save to current folder”.)
 
+
 📺 6. SCRCPY BASICS (USB MIRRORING)
 
 Run scrcpy:
@@ -134,6 +140,7 @@ Improve quality:
 Show debug logs (if it closes instantly):
     scrcpy
 
+
 🚨 7. TROUBLESHOOTING
 
 DEVICE NOT DETECTED:
@@ -151,6 +158,7 @@ UNAUTHORIZED:
 SCRCPY CLOSES INSTANTLY:
   • Run "scrcpy" without double-clicking to view errors  
 
+
 🧾 8. QUICK CHEAT SHEET
 
     adb devices
@@ -162,6 +170,7 @@ SCRCPY CLOSES INSTANTLY:
     scrcpy
     scrcpy -f
     scrcpy --turn-screen-off
+
 
 🔥 9. fireLabs_AI
 
