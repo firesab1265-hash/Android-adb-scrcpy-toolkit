@@ -1,193 +1,211 @@
-ADB & Scrcpy (Windows Only) — Complete Offline Guide
+######################################################################
+#        ADB & SCRCPY (WINDOWS ONLY) — COMPLETE OFFLINE GUIDE        #
+#                Clean • Beginner-Friendly • Self-Contained          #
+######################################################################
 
-Clean • Beginner-Friendly • Self-Contained
 
-📦 1. What’s Included
+==============================================================
+📦 1. WHAT’S INCLUDED
+==============================================================
 
-This repository contains everything required to run ADB and Scrcpy on Windows without installing Android Studio or downloading anything from the internet.
+This repository contains everything needed to run ADB and Scrcpy on Windows
+WITHOUT installing Android Studio or downloading anything externally.
 
 Included (inside /downloads):
 
-platform-tools-win.zip → ADB + Fastboot (Windows)
+  • platform-tools-win.zip     → ADB + Fastboot (Windows)
+  • scrcpy-win64-v3.1.zip      → Scrcpy (Windows 64-bit)
 
-scrcpy-win64-v3.1.zip → Scrcpy (Windows 64-bit)
+Direct links:
+  https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-win.zip
+  https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
 
-Direct links for reference:
 
-Platform Tools:
-https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-win.zip
+==============================================================
+🛠️ 2. INSTALLATION (WINDOWS)
+==============================================================
 
-Scrcpy:
-https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
+-----------------------------
+STEP 1 — Extract Platform Tools
+-----------------------------
+1. Open:   /downloads/platform-tools-win.zip
+2. Extract to a simple location, such as:
 
-🛠️ 2. Installation (Windows)
-Step 1 — Extract Platform Tools
+       C:\Android\platform-tools\
 
-Open /downloads/platform-tools-win.zip.
+3. Confirm you see:
+       adb.exe
+       fastboot.exe
 
-Extract to a simple location such as:
-C:\Android\platform-tools\
 
-Make sure the folder contains:
+-----------------------------
+STEP 2 — Extract Scrcpy
+-----------------------------
+1. Open:   /downloads/scrcpy-win64-v3.1.zip
+2. Extract to:
 
-adb.exe
+       C:\Android\scrcpy\
 
-fastboot.exe
+3. Confirm you see:
+       scrcpy.exe
 
-Step 2 — Extract Scrcpy
+Done — installation complete.
 
-Open /downloads/scrcpy-win64-v3.1.zip.
 
-Extract to:
-C:\Android\scrcpy\
+==============================================================
+🔧 3. PREPARE YOUR ANDROID DEVICE
+==============================================================
 
-Confirm that scrcpy.exe is inside the folder.
-
-Installation is complete.
-
-🔧 3. Prepare Your Android Device
+-----------------------------
 Enable Developer Options
+-----------------------------
+Settings → About phone/tablet  
+Tap "Build number" seven times  
+Enter your PIN  
 
-Settings → About phone/tablet
-
-Tap “Build number” seven times
-
-Enter your PIN
-
+-----------------------------
 Enable USB Debugging
+-----------------------------
+Settings → System → Developer options → USB debugging  
+✔ Enable it  
 
-Settings → System → Developer Options
+-----------------------------
+Connect Your Device
+-----------------------------
+Plug in a good USB cable  
+Approve the popup:
 
-Turn on USB debugging
-
-Connect Device via USB
-
-Use a good cable and accept the popup:
-
-“Allow USB debugging?”
-
-✔ Always allow from this computer
-
-✔ OK
-
-🧪 4. Test ADB Connection
-
-Run these commands in Command Prompt after extracting the tools:
-
-cd C:\Android\platform-tools
-adb devices
+    “Allow USB debugging?”
+    ✔ Always allow from this computer
+    ✔ OK  
 
 
-Expected output:
-XXXXXXXXXXXX device
+==============================================================
+🧪 4. TEST ADB CONNECTION
+==============================================================
 
-If it shows unauthorized, approve the popup on your device.
+Open Command Prompt and run:
 
-If nothing appears:
+    cd C:\Android\platform-tools
+    adb devices
 
-Try another cable
+EXPECTED RESULT:
 
-Enable File Transfer (MTP)
+    XXXXXXXXXXXX    device
 
-Close and reopen CMD
+If it shows "unauthorized":
+  • Check your device for a popup  
+  • Toggle USB debugging  
 
-Restart ADB using:
+If nothing shows:
+  • Try a new cable  
+  • Enable File Transfer (MTP)  
+  • Restart the device  
+  • Restart ADB:
 
-adb kill-server
-
-adb start-server
-
-⚙️ 5. Essential ADB Commands
-
-List devices
-adb devices
-
-Reboot device
-adb reboot
-
-Open shell
-adb shell
-Exit with exit
-
-Install APK
-adb install app.apk
-
-Push file → Downloads
-adb push file.txt /sdcard/Download/
-
-Pull file ← Downloads
-adb pull /sdcard/Download/file.txt .
-(“.” means save in current folder)
-
-📺 6. Scrcpy Basics (USB Mirroring)
-
-Run Scrcpy
-
-cd C:\Android\scrcpy
-scrcpy.exe
+        adb kill-server
+        adb start-server
 
 
-Fullscreen
-scrcpy -f
+==============================================================
+⚙️ 5. ESSENTIAL ADB COMMANDS
+==============================================================
 
-Turn device screen off while mirroring
-scrcpy --turn-screen-off
+List devices:
+    adb devices
 
-Improve quality
-scrcpy --bit-rate 16M --max-size 1920
+Reboot device:
+    adb reboot
 
-Show errors
-scrcpy
+Open shell:
+    adb shell
 
-🚨 7. Troubleshooting
+Exit shell:
+    exit
 
-Device not detected
+Install APK:
+    adb install app.apk
 
-Try different USB cables
+Push file → Downloads:
+    adb push file.txt /sdcard/Download/
 
-Restart device
+Pull file ← Downloads:
+    adb pull /sdcard/Download/file.txt .
 
-Restart ADB:
+(The “.” means “save to current folder”.)
 
-adb kill-server
 
-adb start-server
+==============================================================
+📺 6. SCRCPY BASICS (USB MIRRORING)
+==============================================================
 
-Unauthorized
+Run scrcpy:
+    cd C:\Android\scrcpy
+    scrcpy.exe
 
-Toggle USB debugging off/on
+Fullscreen:
+    scrcpy -f
 
-Reconnect cable
+Turn device screen off while mirroring:
+    scrcpy --turn-screen-off
 
-Scrcpy closes instantly
+Improve quality:
+    scrcpy --bit-rate 16M --max-size 1920
 
-Run scrcpy from CMD to see logged errors
+Show debug logs (if it closes instantly):
+    scrcpy
 
-🧾 8. Quick Cheat Sheet
 
-adb devices
+==============================================================
+🚨 7. TROUBLESHOOTING
+==============================================================
 
-adb shell
+DEVICE NOT DETECTED:
+  • Change USB cable  
+  • Restart device  
+  • Restart ADB:
+        adb kill-server
+        adb start-server
 
-adb reboot
+UNAUTHORIZED:
+  • Toggle USB debugging  
+  • Reconnect USB cable  
+  • Clear authorization and retry  
 
-adb install app.apk
+SCRCPY CLOSES INSTANTLY:
+  • Run "scrcpy" without double-clicking to view errors  
 
-adb push file /sdcard/Download/
 
-adb pull /sdcard/Download/file .
+==============================================================
+🧾 8. QUICK CHEAT SHEET
+==============================================================
 
-scrcpy
+    adb devices
+    adb shell
+    adb reboot
+    adb install app.apk
+    adb push file /sdcard/Download/
+    adb pull /sdcard/Download/file .
+    scrcpy
+    scrcpy -f
+    scrcpy --turn-screen-off
 
-scrcpy -f
 
-scrcpy --turn-screen-off
+==============================================================
+🔥 9. fireLabs_AI
+==============================================================
 
-🔥 fireLabs_AI
+This toolkit is part of fireLabs_AI — a personal collection of small tools,
+utilities, and experiments I organize as an IT hobby developer using
+AI-assisted development.
 
-This toolkit is part of fireLabs_AI — a personal collection of curated tools, utilities, and experiments I organize as an IT hobby developer using AI-assisted development.
+The tools in this repo are NOT created by me — they are publicly available.
+fireLabs_AI simply organizes them into a clean, offline, easy-to-use format
+for convenience and learning.
 
-The tools in this repo are not created by me; they are publicly available.
-fireLabs_AI simply organizes them into a clean, offline, easy-to-use format for convenience and learning.
+More curated tools and experiments will be added as fireLabs_AI grows.
 
-More curated tools and experiments will be added as the project grows.
+
+######################################################################
+#                        END OF COMPLETE GUIDE                       #
+######################################################################
