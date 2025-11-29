@@ -138,7 +138,7 @@ scrcpy --turn-screen-off
 
 ---------------------------------------------------------------------
 
-# 🔥 9. fireLabs_AI
+# 🔥fireLabs_AI
 
 This toolkit is part of **fireLabs_AI** — a personal collection of tools  
 and experiments I organize as an IT hobby developer using AI-assisted  
