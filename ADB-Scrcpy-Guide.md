@@ -1,4 +1,4 @@
-# ADB & SCRCPY (WINDOWS ONLY) — COMPLETE OFFLINE GUIDE
+# ADB & SCRCPY (WINDOWS ONLY) — COMPLETE GUIDE
 ### Clean • Beginner-Friendly • Self-Contained
 
 ---------------------------------------------------------------------
@@ -37,17 +37,15 @@ Installation is complete.
 
 ## Enable Developer Options
 Settings → About phone/tablet  
-Tap “Build number” seven times  
-Enter your PIN  
+Tap “Build number” seven times    
 
 ## Enable USB Debugging
-Settings → System → Developer options → USB debugging  
-Turn it on  
+Settings → System → Developer options → USB debugging    
 
 ## Connect Your Device
 Use a good USB cable and approve the popup:  
 “Allow USB debugging?”  
-✔ Always allow from this computer  
+✔ Always allow from this   computer  
 ✔ OK  
 
 ---------------------------------------------------------------------
@@ -164,5 +162,3 @@ available utilities bundled here for convenience and ease of use.
 More curated tools and experiments will be added as fireLabs_AI grows.
 
 ---------------------------------------------------------------------
-
-# END OF COMPLETE GUIDE
