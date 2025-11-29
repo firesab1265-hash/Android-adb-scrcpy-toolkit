@@ -1,12 +1,10 @@
-######################################################################
+
 #            ANDROID ADB + SCRCPY (WINDOWS) — COMPLETE GUIDE         #
 #                  Offline • Beginner-Friendly • Clean               #
-######################################################################
 
 
-======================================================================
+
 📦 1. WHAT'S INCLUDED
-======================================================================
 
 This repository contains everything required to run ADB and Scrcpy on
 Windows — **completely offline**, no external downloads needed.
@@ -19,9 +17,9 @@ Included in /downloads:
 This guide explains exactly how to extract, set up, and use both.
 
 
-======================================================================
+
 🛠️ 2. INSTALLATION (WINDOWS)
-======================================================================
+
 
 ----------------------------
 STEP 1 — Extract Platform Tools
