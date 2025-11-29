@@ -1,6 +1,6 @@
 
-#            ANDROID ADB + SCRCPY (WINDOWS) — COMPLETE GUIDE         #
-#                  Offline • Beginner-Friendly • Clean               #
+#ANDROID ADB + SCRCPY — COMPLETE GUIDE#
+#Offline • Beginner-Friendly#
 
 
 
@@ -17,9 +17,7 @@ Included in /downloads:
 This guide explains exactly how to extract, set up, and use both.
 
 
-
 🛠️ 2. INSTALLATION (WINDOWS)
-
 
 ----------------------------
 STEP 1 — Extract Platform Tools
@@ -32,7 +30,6 @@ STEP 1 — Extract Platform Tools
 3. Confirm the folder contains:
        adb.exe
        fastboot.exe
-
 
 ----------------------------
 STEP 2 — Extract Scrcpy
@@ -48,9 +45,7 @@ STEP 2 — Extract Scrcpy
 Installation is complete. No setup required.
 
 
-======================================================================
 🔧 3. PREPARE YOUR ANDROID DEVICE
-======================================================================
 
 ----------------------------
 Enable Developer Options
@@ -74,24 +69,15 @@ Use a good USB cable and approve the popup:
     ✔ Always allow from this computer
     ✔ OK
 
-
-======================================================================
 🧪 4. TEST ADB CONNECTION
-======================================================================
 
 In Command Prompt:
 
 cd C:\Android\platform-tools
 adb devices
 
-sql
-Copy code
-
 EXPECTED RESULT:
 XXXXXXXXXXXX device
-
-diff
-Copy code
 
 If you see “unauthorized”:
 - Check the device for a popup  
@@ -108,10 +94,7 @@ adb start-server
 markdown
 Copy code
 
-
-======================================================================
 ⚙️ 5. ESSENTIAL ADB COMMANDS
-======================================================================
 
 List devices:
 adb devices
@@ -122,75 +105,40 @@ Copy code
 Reboot:
 adb reboot
 
-sql
-Copy code
-
 Open device shell:
 adb shell
 exit ← to leave
 
-yaml
-Copy code
-
 Install APK:
 adb install app.apk
-
-yaml
-Copy code
 
 Push file → Downloads:
 adb push file.txt /sdcard/Download/
 
-yaml
-Copy code
-
 Pull file ← Downloads:
 adb pull /sdcard/Download/file.txt .
 
-markdown
-Copy code
 (The “.” means save to current folder.)
 
-
-======================================================================
 📺 6. USING SCRCPY (USB MIRRORING)
-======================================================================
 
 Run scrcpy:
 cd C:\Android\scrcpy
 scrcpy.exe
 
-makefile
-Copy code
-
 Fullscreen:
 scrcpy -f
-
-java
-Copy code
 
 Turn device screen off (while mirroring):
 scrcpy --turn-screen-off
 
-yaml
-Copy code
-
 Improve quality:
 scrcpy --bit-rate 16M --max-size 1920
-
-sql
-Copy code
 
 Show logs (if window closes instantly):
 scrcpy
 
-markdown
-Copy code
-
-
-======================================================================
 🚨 7. TROUBLESHOOTING
-======================================================================
 
 DEVICE NOT DETECTED:
 - Try a different USB cable  
@@ -199,29 +147,17 @@ DEVICE NOT DETECTED:
 adb kill-server
 adb start-server
 
-diff
-Copy code
-
 UNAUTHORIZED:
 - Toggle USB debugging  
 - Reconnect cable  
 - Clear authorization:
 adb usb
 
-objectivec
-Copy code
-
 SCRCPY INSTANTLY CLOSES:
 - Run from CMD to see errors:
 scrcpy
 
-markdown
-Copy code
-
-
-======================================================================
 🧾 8. QUICK CHEAT SHEET
-======================================================================
 
 adb devices
 adb shell
@@ -233,13 +169,7 @@ scrcpy
 scrcpy -f
 scrcpy --turn-screen-off
 
-shell
-Copy code
-
-
-======================================================================
 🔥 9. fireLabs_AI
-======================================================================
 
 This guide and toolkit are part of **fireLabs_AI** — a personal collection
 of curated tools, utilities, and experiments I organize to streamline
@@ -251,7 +181,4 @@ for convenience and learning.
 
 More curated tools and experiments will be added as fireLabs_AI grows.
 
-
-######################################################################
-#                      END OF COMPLETE GUIDE                         #
 ######################################################################
