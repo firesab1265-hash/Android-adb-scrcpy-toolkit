@@ -103,18 +103,6 @@ Run scrcpy:
 cd C:\Android\scrcpy  
 scrcpy.exe  
 
-Fullscreen:  
-scrcpy -f  
-
-Turn device screen off while mirroring:  
-scrcpy --turn-screen-off  
-
-Improve quality:  
-scrcpy --bit-rate 16M --max-size 1920  
-
-Show debug logs (if it closes instantly):  
-scrcpy  
-
 ---------------------------------------------------------------------
 
 # 🚨 7. TROUBLESHOOTING
