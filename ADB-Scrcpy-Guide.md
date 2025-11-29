@@ -1,7 +1,7 @@
 #        ADB & SCRCPY (WINDOWS ONLY) — COMPLETE OFFLINE GUIDE        #
 #                Clean • Beginner-Friendly • Self-Contained          #
 
-
+-----------------------------
 📦 1. WHAT’S INCLUDED
 
 This repository contains everything needed to run ADB and Scrcpy on Windows
@@ -20,7 +20,6 @@ Direct links:
 🛠️ 2. INSTALLATION (WINDOWS)
 
 STEP 1 — Extract Platform Tools
------------------------------
 1. Open:   /downloads/platform-tools-win.zip
 2. Extract to a simple location, such as:
 
@@ -30,9 +29,7 @@ STEP 1 — Extract Platform Tools
        adb.exe
        fastboot.exe
 
------------------------------
 STEP 2 — Extract Scrcpy
------------------------------
 1. Open:   /downloads/scrcpy-win64-v3.1.zip
 2. Extract to:
 
@@ -43,25 +40,17 @@ STEP 2 — Extract Scrcpy
 
 Done — installation complete.
 
------------------------------
 🔧 3. PREPARE YOUR ANDROID DEVICE
 
------------------------------
 Enable Developer Options
------------------------------
 Settings → About phone/tablet  
 Tap "Build number" seven times  
 Enter your PIN  
 
------------------------------
 Enable USB Debugging
------------------------------
 Settings → System → Developer options → USB debugging  
 ✔ Enable it  
-
------------------------------
 Connect Your Device
------------------------------
 Plug in a good USB cable  
 Approve the popup:
 
